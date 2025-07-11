@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <style>
+     p {
+       color:red;
+     }
+   </style>
+  </head>
+  <body>
+    
+  </body> 
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Task Manager</h1>
+        </header>
+        <main>
+            
+              
+            </div>
+            <ul id="task-list">
+              <li class="task-item">
+              <style>
+  .highlight-red {
+    background-color: red;
+  }
+ </style>
+</head>
+<body>
+ 
+  
+</body>
+</html>        <p>This paragraph will be red.</p>   
+               <input type="checkbox" id="task1" name="task1"> 
+               <label for="task1">Task 1: Finish JavaScript project</label>
+               <input type="checkbox" id="task2" name="task2">
+               <label for="task2">Task 2: Finish chores</label>
+               <input type="checkbox" id="task3" name="task3">
+               <label for="task3">Task 3: Call friend</label>
+               <p>Here's some text with a <span class="red-highlight">red highlight</span>.</p>
+               <p>Another paragraph, also with a <span class="red-highlight">red highlight</span>.</p>
+            </li>    
+            </ul>
+        </main>
+    </div>
+    <script src="script.js"></script>
+    <form action="/submit-task" method="POST">
+    
+    <input type="text" id="taskTitle" placeholder="Task Name" required>
+    <ul id="todo-list">
+  <li>Task 1 <button class="delete-button">Delete</button></li>
+  <li>Task 2 <button class="delete-button">Delete</button></li>
+  <li>Task 3 <button class="delete-button">Delete</button></li>
+    </ul>
+ 
+
+   
+    
+    <select id="assignee" name="assignee">
+        <option value="user1">High</option>
+        <option value="user2">Low</option>
+        <option value="user2">Medium</option>
+        <input type="checkbox" id="agreeTerms" name="terms" value="agree"
+        <input type="checkbox" id="Important"
+        <input type="checkbox" id="done"
+        <label for="assignee">Important:</label>
+        
+        <button id="add-task">Add Task</button>
+    </select>
+
+      <script>
+        const tasks = [
+            {
+                id: 1,
+                name: "Finish JavaScript project",
+                priority: "High",
+                isImportant:true,
+                iscompleted: false,
+            },
+            {
+                id: 2,
+                name: "Finish chores",
+                priority: "Medium",
+                isImportant:true,
+                iscompleted: false,
+            },
+            {
+                id: 3,
+                name: "Call friend",
+                priority: "Low",
+                isImportant:false,
+                iscompleted: true,
+            }
+        ];
+        
+        
+        
+        function displayTasks() {
+            const taskList = document.getElementById("taskList");
+            taskList.innerHTML = ""; 
+
+            tasks.forEach(task => {
+                const listItem = document.createElement("li");
+                listItem.textContent = `Task: ${task.name}, Priority: ${task.priority}, Completed: ${task.completed ? "Yes" : "No"}`;
+                if (task.completed) {
+                    listItem.style.textDecoration = "line-through";
+                }
+                taskList.appendChild(listItem);
+            });
+        }
+
+        displayTasks(); 
+    </script>
+</body>
+</html>
+
+    
+</form>
+<p>Task added on: <time datetime="2025-07-10">July 10, 2025</time></p>
+<p class="completed-task">Task 1:Finish JavaScript project</p>
+<p class="completed-task">Task 2:Finish chores</p>
+<p class="completed-task">Task 3:Call friend</p>
+<div id="taskmanager">
+
+</div>
+       
+</body>
+</html>
